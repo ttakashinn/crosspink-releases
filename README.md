@@ -26,7 +26,7 @@ Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ l
 
 ## OTA và cài qua USB
 
-Firmware từ **`1.6.0-cp.7.3`** có địa chỉ OTA trỏ tới repo này. Bản cp.7.3 là bản chuyển tiếp, được chuẩn bị để cung cấp cùng binary ở cả địa chỉ cũ và mới. Các binary cp.7.2 và cũ hơn được chuyển sang đây vẫn giữ nguyên byte và địa chỉ OTA cũ. Đọc [hướng dẫn chuyển OTA](OTA-MIGRATION.md) trước khi kỳ vọng máy cũ tự nhận bản mới.
+Firmware từ **`1.6.0-cp.7.3`** có địa chỉ OTA trỏ tới repo này. Bản cp.7.3 là bản chuyển tiếp, đã được công bố với cùng binary và checksum ở cả địa chỉ cũ và mới. Các binary cp.7.2 và cũ hơn được chuyển sang đây vẫn giữ nguyên byte và địa chỉ OTA cũ. Đọc [hướng dẫn chuyển OTA](OTA-MIGRATION.md) trước khi kỳ vọng máy cũ tự nhận bản mới.
 
 Các file trên là **application image**, không phải image ghép đầy đủ bootloader/partition. Với X3/X4 đã có bootloader và bảng phân vùng CrossPink tương thích, có thể dùng esptool để ghi application vào `0x10000`:
 

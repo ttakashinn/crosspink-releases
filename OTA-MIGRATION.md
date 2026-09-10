@@ -9,7 +9,7 @@ Phiên bản chuyển tiếp được chọn là **`1.6.0-cp.7.3`**. Firmware t�
 ## Lộ trình cập nhật
 
 1. Repo `crosspink` tiếp tục public để firmware cũ vẫn truy cập được đường OTA và mã nguồn tương ứng.
-2. Bản chuyển tiếp cp.7.3 cần có mặt ở cả repo cũ và repo phát hành, với cùng binary và checksum, để máy cũ tải được nó từ địa chỉ đã ghim. Sau khi cài cp.7.3, máy sẽ kiểm tra các bản tiếp theo tại repo phát hành.
+2. Bản chuyển tiếp cp.7.3 đã có mặt ở cả repo cũ và repo phát hành, với cùng binary và checksum, để máy cũ tải được nó từ địa chỉ đã ghim. Sau khi cài cp.7.3, máy sẽ kiểm tra các bản tiếp theo tại repo phát hành.
 3. Kiểm tra trên X3/X4 và X4 Pro: tải từ repo cũ, cài, rồi truy vấn repo mới và tải đúng asset/checksum. Chỉ sau đó mới chốt việc chuyển private và cách hỗ trợ người còn ở firmware cũ.
 4. Sau khi repo nguồn trở thành private, máy chưa cài bản chuyển tiếp sẽ cần cập nhật thủ công từ SD hoặc USB tương thích. GitHub không chuyển hướng một URL repo private thành URL repo phát hành khác chỉ vì các tag trùng nhau.
 
