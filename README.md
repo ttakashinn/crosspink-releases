@@ -26,7 +26,7 @@ Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ l
 
 ## OTA và cài qua USB
 
-Firmware từ **`1.6.0-cp.7.3`** có địa chỉ OTA trỏ tới repo này. Bản cp.7.3 là bản chuyển tiếp, đã được công bố với cùng binary và checksum ở cả địa chỉ cũ và mới. Các binary cp.7.2 và cũ hơn được chuyển sang đây vẫn giữ nguyên byte và địa chỉ OTA cũ. Đọc [hướng dẫn chuyển OTA](OTA-MIGRATION.md) trước khi kỳ vọng máy cũ tự nhận bản mới.
+Firmware từ **`1.6.0-cp.7.3`** có địa chỉ OTA trỏ tới repo này. Repo nguồn `crosspink` hiện là private và không còn Release; máy cp.7.2 và cũ hơn không truy cập được địa chỉ OTA cũ. Các máy này cần cài thủ công bản mới đúng thiết bị qua thẻ SD nếu được hỗ trợ, hoặc qua USB tương thích, trước khi dùng được OTA hiện tại. Đọc [hướng dẫn chuyển OTA](OTA-MIGRATION.md).
 
 Các file trên là **application image**, không phải image ghép đầy đủ bootloader/partition. Với X3/X4 đã có bootloader và bảng phân vùng CrossPink tương thích, có thể dùng esptool để ghi application vào `0x10000`:
 
@@ -42,6 +42,6 @@ Một số bản cũ có gói `crosspink-…-font-pack.zip`; giải nén theo RE
 
 Đọc [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) và [licenses/](licenses/). Giấy phép MIT của dự án gốc không thay thế GPL/LGPL, Apache, OFL và các điều kiện của thành phần được liên kết hoặc nhúng. Chia sẻ firmware miễn phí vẫn phải đáp ứng các điều kiện phân phối này.
 
-Mã nguồn tương ứng hiện có tại [ttakashinn/crosspink](https://github.com/ttakashinn/crosspink). Mỗi Release ghi đường dẫn đúng phiên bản và SDK. Các mục “Source code (zip/tar.gz)” GitHub tự sinh trong repo này chỉ chứa tài liệu/giấy phép; chúng không phải mã nguồn firmware.
+Kho mã nguồn ứng dụng và SDK hiện được quản lý riêng tư. Repo này cung cấp firmware, checksum và thông báo giấy phép. Các mục “Source code (zip/tar.gz)” GitHub tự sinh trong repo này chỉ chứa tài liệu/giấy phép; chúng không phải mã nguồn firmware. Firmware công khai vẫn chứa giao diện web và mã máy có thể phân tích.
 
-CrossPink kế thừa [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader) và [FreeInk SDK](https://github.com/ttakashinn/freeink-sdk). Dự án không liên kết với nhà sản xuất thiết bị. Khi báo lỗi, cung cấp mẫu máy, phiên bản firmware và các bước tái lập; không đăng mật khẩu Wi-Fi, token hoặc dữ liệu cá nhân.
+CrossPink kế thừa [CrossPoint Reader](https://github.com/crosspoint-reader/crosspoint-reader) và [FreeInk SDK](https://github.com/Free-Ink/freeink-sdk). Dự án không liên kết với nhà sản xuất thiết bị. Khi báo lỗi, cung cấp mẫu máy, phiên bản firmware và các bước tái lập; không đăng mật khẩu Wi-Fi, token hoặc dữ liệu cá nhân.

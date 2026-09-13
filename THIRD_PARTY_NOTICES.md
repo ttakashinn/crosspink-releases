@@ -19,11 +19,11 @@ This repository distributes firmware and documentation separately from developme
 | Embedded fonts | Each family’s `OFL.txt` or `UFL.txt` | SIL Open Font License or Ubuntu Font Licence. The text for each supplied family is included separately. Older downloadable font packs also contain their own notices. |
 | JSZip and bundled pako | Header in the served `jszip.min.js` | JSZip MIT or GPLv3; MIT option and pako MIT/zlib notices are reproduced. |
 
-The license texts in [licenses/](licenses/) are copied from the actual checked-out/resolved dependencies or their pinned upstream versions. [License inventory](licenses/INDEX.md) identifies their origins. Different historical firmware versions can use different revisions; each Release links its corresponding source and SDK so the applicable revision can be inspected. This inventory is not a statement that a MIT-only or source-free redistribution has been cleared.
+The license texts in [licenses/](licenses/) are copied from the actual checked-out/resolved dependencies or their pinned upstream versions. [License inventory](licenses/INDEX.md) identifies their origins. Different historical firmware versions can use different revisions. This inventory is not a statement that a MIT-only or source-free redistribution has been cleared.
 
 ## Corresponding source
 
-Each Release provides a link to its exact application source revision and SDK where applicable. The application source contains dependency pins, build scripts and local patches. Clone the source repository, check out that revision, and initialize submodules recursively as described in the Release. Source remains publicly available at [ttakashinn/crosspink](https://github.com/ttakashinn/crosspink) during this migration.
+The application and SDK repositories are currently private. This release repository contains documentation and license texts; its automatically generated source archives do not contain firmware source. Earlier release notes may contain source links that are no longer publicly accessible. Repository visibility does not alter the component licenses or their distribution requirements.
 
 Free-of-charge sharing, including to a small community group, is still distribution. Providing license text alone does not replace GPL corresponding source or LGPL relinking requirements. Any future private-source distribution needs a resolved license/source distribution arrangement before public firmware publication. No restriction on the rights granted by the component licenses is added here.
 
