@@ -1,0 +1,67 @@
+CROSSPINK FIRMWARE INSTALLATION GUIDE
+
+ENGLISH
+
+Choose the firmware for both your device and your preferred release channel. “Full” and “Light” are separate channels; do not choose by filename alone. The current release assets are:
+
+Full
+- Xteink X3 / X4: firmware.bin
+- Xteink X4 Pro: firmware-x4pro.bin
+
+Light
+- Xteink X3 / X4: firmware-light.bin
+- Xteink X4 Pro: firmware-light-x4pro.bin
+
+Before installing
+1. Confirm your exact device model and the channel you intend to use.
+2. Back up important reading data from the SD card. Keep the `/.crosspoint` folder; do not format the card.
+3. Make sure the device has sufficient battery power.
+4. Use only the firmware file for your device. The X4 Pro firmware is not for X3/X4, and the X3/X4 firmware is not for X4 Pro.
+
+Install from the SD card
+The required filename depends on the update method provided by the firmware currently installed on your device.
+
+- CrossPink, CrossInk, or another updater that opens a file picker: keep the release filename, copy the `.bin` file to the SD card, open Settings > System > SD Card Firmware Update, and select that file. CrossInk’s installation guide explicitly supports selecting the downloaded `firmware-*.bin` file.
+- CrossPoint: its user guide documents the SD update using a file named `firmware.bin`. Follow the instructions for the exact CrossPoint version installed; rename the selected release file only if that procedure expects this fixed name.
+- Stock/USB-locked recovery or escape-hatch mode: this is a different procedure from the Settings file picker. Follow the instructions for the exact device and recovery method; some flows use a dedicated name such as `update.bin`. Do not assume that the release filename or `firmware.bin` is accepted by every recovery loader.
+
+For a file-picker update, copy only the selected firmware to the SD card, then choose it in the updater. Do not turn off the device or remove the SD card while updating. Wait for the device to finish and restart. After restart, confirm the installed version and that your reading data is intact.
+
+Do not guess USB flashing commands or addresses. Use only a device-specific installation procedure confirmed for your model and current bootloader/partition layout.
+
+For method-specific instructions, consult the current [CrossPoint user guide](https://github.com/crosspoint-reader/crosspoint-reader/blob/develop/USER_GUIDE.md) or [CrossInk installation guide](https://crossink.dev/installation.html).
+
+============
+
+HƯỚNG DẪN CÀI ĐẶT FIRMWARE CROSSPINK
+
+TIẾNG VIỆT
+
+Hãy chọn firmware đúng cả mẫu máy lẫn kênh phát hành. “Full” và “Light” là 2 kênh riêng; không chọn chỉ dựa vào tên tệp. Các tệp phát hành hiện tại:
+
+Full
+- Xteink X3 / X4: firmware.bin
+- Xteink X4 Pro: firmware-x4pro.bin
+
+Light
+- Xteink X3 / X4: firmware-light.bin
+- Xteink X4 Pro: firmware-light-x4pro.bin
+
+Trước khi cài đặt
+1. Xác nhận chính xác mẫu máy và kênh firmware bạn muốn dùng.
+2. Sao lưu dữ liệu đọc quan trọng trên thẻ SD. Giữ nguyên thư mục `/.crosspoint`; không format thẻ.
+3. Đảm bảo thiết bị còn đủ pin.
+4. Chỉ dùng firmware dành cho mẫu máy của bạn. Firmware X4 Pro không dành cho X3/X4 và firmware X3/X4 không dành cho X4 Pro.
+
+Cài từ thẻ SD
+Tên tệp cần dùng phụ thuộc vào cách cập nhật mà firmware đang cài trên máy cung cấp.
+
+- CrossPink, CrossInk hoặc firmware có trình chọn tệp: giữ nguyên tên phát hành, chép tệp `.bin` vào thẻ SD, mở Cài đặt > Hệ thống > Cập nhật firmware từ SD rồi chọn tệp đó. Hướng dẫn cài đặt CrossInk cũng yêu cầu chọn tệp `firmware-*.bin` đã tải.
+- CrossPoint: hướng dẫn sử dụng của CrossPoint ghi cách cập nhật SD bằng tệp tên `firmware.bin`. Làm theo hướng dẫn đúng phiên bản CrossPoint đang cài; chỉ đổi tên tệp phát hành nếu quy trình đó yêu cầu tên cố định này.
+- Chế độ recovery/escape hatch của firmware gốc hoặc máy khóa USB: đây là quy trình khác với trình chọn tệp trong Cài đặt. Làm theo hướng dẫn dành đúng mẫu máy và cách recovery; một số quy trình dùng tên riêng như `update.bin`. Không mặc định rằng mọi bộ nạp recovery đều nhận tên phát hành hoặc `firmware.bin`.
+
+Với cách cập nhật có trình chọn tệp, chép firmware cần dùng vào thẻ rồi chọn tệp đó trong trình cập nhật. Không tắt máy hoặc rút thẻ SD khi đang cập nhật; chờ máy hoàn tất và khởi động lại. Sau khi khởi động, kiểm tra phiên bản firmware và dữ liệu đọc.
+
+Đừng tự đoán lệnh hoặc địa chỉ nạp qua USB. Chỉ dùng quy trình cài đặt riêng cho mẫu máy đã được xác nhận tương thích với bootloader và bảng phân vùng hiện có.
+
+Xem hướng dẫn hiện hành theo từng cách cài: [hướng dẫn CrossPoint](https://github.com/crosspoint-reader/crosspoint-reader/blob/develop/USER_GUIDE.md) hoặc [hướng dẫn CrossInk](https://crossink.dev/installation.html).
