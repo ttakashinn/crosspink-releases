@@ -1,3 +1,29 @@
+# DISCLAIMER — PERSONAL-USE FIRMWARE
+
+## ENGLISH
+
+This is an independent, non-commercial firmware project created by its author for the author’s personal use. It is provided free of charge, “AS IS” and “AS AVAILABLE,” without any warranty or promise of support, maintenance, updates, compatibility, security, reliability, or fitness for a particular purpose.
+
+Installing or using custom firmware is voluntary and at your own risk. The process may fail, prevent the device from starting, erase or corrupt data, affect connected accessories, cause malfunctions, or damage the device. Before proceeding, confirm that the firmware is intended for your exact device model and hardware revision, read the installation instructions, and back up your data. You are responsible for installation, backups, recovery, and the consequences of using the firmware.
+
+The author disclaims responsibility for loss or damage arising from downloading, installing, modifying, or using this firmware, including device damage, data loss, loss of use, or consequential loss.
+
+No warranty or technical support is offered. If you do not accept these risks, do not install or use this firmware.
+
+## TUYÊN BỐ MIỄN TRỪ TRÁCH NHIỆM — FIRMWARE DÙNG CÁ NHÂN
+
+## TIẾNG VIỆT
+
+Đây là firmware thuộc một dự án độc lập, phi thương mại, do tác giả tạo ra cho nhu cầu sử dụng cá nhân của chính tác giả. Firmware được cung cấp miễn phí, theo hiện trạng (“NGUYÊN TRẠNG”) và khi có sẵn, không kèm bảo đảm hoặc cam kết về hỗ trợ, bảo trì, cập nhật, khả năng tương thích, bảo mật, độ tin cậy hay tính phù hợp cho một mục đích cụ thể.
+
+Việc cài đặt hoặc sử dụng firmware tùy chỉnh là tự nguyện và do bạn tự chịu rủi ro. Quá trình này có thể thất bại, khiến thiết bị không khởi động được, xóa hoặc làm hỏng dữ liệu, ảnh hưởng đến phụ kiện kết nối, gây trục trặc hoặc làm hỏng thiết bị. Trước khi thực hiện, hãy xác nhận firmware dành đúng mẫu thiết bị và phiên bản phần cứng của bạn, đọc hướng dẫn cài đặt và sao lưu dữ liệu. Bạn tự chịu trách nhiệm về việc cài đặt, sao lưu, khôi phục và các hậu quả phát sinh từ việc sử dụng firmware.
+
+Tác giả từ chối trách nhiệm đối với mất mát hoặc thiệt hại phát sinh từ việc tải xuống, cài đặt, sửa đổi hoặc sử dụng firmware này, bao gồm hỏng thiết bị, mất dữ liệu, mất khả năng sử dụng hoặc thiệt hại phát sinh tiếp theo.
+
+Tác giả không cung cấp bảo hành hoặc hỗ trợ kỹ thuật. Nếu bạn không chấp nhận các rủi ro này, đừng cài đặt hoặc sử dụng firmware.
+
+---
+
 # CrossPink — firmware downloads
 
 Kho tải firmware CrossPink dành cho máy đọc sách Xteink. Repository này có lịch sử Git riêng, chỉ chứa tài liệu phát hành và giấy phép; mã nguồn firmware và lịch sử phát triển không được sao chép vào đây.
