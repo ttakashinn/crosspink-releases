@@ -1,25 +1,28 @@
-CROSSPINK 1.6.5-cp.8.10 RC - MANUAL INSTALLATION GUIDE
-=======================================================
+CROSSPINK FIRMWARE INSTALLATION GUIDE
+=====================================
 
 ENGLISH
 -------
 
-1. RELEASE STATUS
+1. CHOOSE THE RELEASE
 
-This is a release candidate (RC) for testing, not an official stable
-release. Download the .bin file for your device and channel from the
-Google Drive folder shared by the maintainer. The RC is not offered
-through OTA or GitHub Releases.
+CrossPink is distributed as stable releases and release candidates (RC).
+A stable release may be offered through the device's OTA updater after it
+is published for the installed channel. An RC is for testing and is
+installed manually from the .bin file shared through Google Drive by
+the maintainer; RC files are not offered through OTA.
 
-At the time of this RC package (24/09/2026), the stable OTA feeds
-point to 8.9. If stable 8.10 is later published in the appropriate
-OTA feed, a device running Full 8.10 RC will recognize Full 8.10
-stable as an update. Light 8.10 RC will likewise recognize Light
-8.10 stable. The channels do not cross over.
-Until stable 8.10 and its OTA feed are published, no 8.10 stable update
-will be offered.
+Download files from the source announced for the release you intend to
+install. Keep the firmware, its optional checksum file, and the release
+instructions from the same build together. Do not mix files from
+different stable or RC builds.
 
-2. CHOOSE THE RIGHT FILE
+If a device is running an RC, a later stable release in the same channel
+may appear in OTA once published. Check the update screen; availability
+depends on the release and the firmware currently installed. Full and
+Light do not update across channels through OTA.
+
+2. CHOOSE THE RIGHT FIRMWARE
 
 Channel  Device             Firmware file                Optional checksum file
 -------  -----------------  ---------------------------  ----------------------------------
@@ -28,27 +31,29 @@ Full     Xteink X4 Pro      firmware-x4pro.bin           firmware-x4pro.bin.sha2
 Light    Xteink X3 / X4     firmware-light.bin           firmware-light.bin.sha256
 Light    Xteink X4 Pro      firmware-light-x4pro.bin     firmware-light-x4pro.bin.sha256
 
-These 4 firmware files do not support X4 Classic. Full and Light are
-separate channels. Do not choose a file by name alone; verify the
-device model and channel. Keep the 4 firmware files, their optional
-checksum files, and this guide from the same RC set together.
+These names apply to the listed devices in CrossPink packages. Other
+devices, including X4 Classic, need a separate compatible image if one
+is provided. Always check both the device model and the Full/Light
+channel in the instructions supplied with the release. A matching
+filename alone does not prove hardware compatibility.
 
 3. OPTIONAL CHECKSUM VERIFICATION
 
-Checking SHA-256 is recommended, but it is optional for installation.
-If you choose to check it, download the .sha256 file matching your
-.bin file. The checksum file contains the expected 64-character hash.
+SHA-256 verification is recommended but is not required to install.
+If a matching .sha256 file is provided, you may download it and check
+the .bin file before copying it to the SD card. The .sha256 file
+contains the expected 64-character hash.
 
 On macOS:      shasum -a 256 FILE.bin
 On Linux:      sha256sum FILE.bin
 On PowerShell: Get-FileHash FILE.bin -Algorithm SHA256
 
-Compare the hash printed by the command with the contents of the
-matching .sha256 file. If they differ, download both files again and
-do not install the mismatched .bin file. The .sha256 file is for
-checking on your computer; copy only the .bin file to the SD card.
+Compare the hash shown by the command with the matching .sha256 file.
+If they differ, download the files again and do not install the
+mismatched .bin file. The checksum file stays on your computer;
+copy only the .bin file to the SD card.
 
-4. INSTALL FROM THE SD CARD
+4. MANUAL INSTALLATION FROM AN SD CARD
 
 Before installing, confirm the exact device model and channel, back
 up important reading data, keep the /.crosspoint folder, and charge
@@ -58,17 +63,15 @@ the device. Do not format the SD card.
 2) If the currently installed firmware has an SD firmware file picker,
    open its update menu and select that file. CrossPink accepts the
    original release filename. CrossInk documents an SD .bin file
-   picker, but acceptance of these CrossPink files and filenames has
-   not been verified here. Stop if its updater rejects the image.
+   picker, but acceptance of CrossPink files and filenames through
+   that updater has not been verified here. Stop if it rejects the image.
 3) Some CrossPoint versions document an SD update using the fixed name
    firmware.bin. Follow the instructions for the exact version already
    installed. Rename the selected file only if that updater requires
    it. Installing CrossPink through a CrossPoint updater has not been
    verified here; stop if it rejects the image.
 4) Do not remove the SD card or interrupt power while writing. After
-   restart, check the reading data and the displayed version:
-   Full:  1.6.5-cp.8.10-rc+778e08c
-   Light: 1.6.5-cp.8.10-light-rc+3b3a981
+   restart, confirm the displayed version, channel, and reading data.
 
 If the current firmware has no compatible SD update method, do not
 guess a USB flashing command or address. Stock recovery and other
@@ -76,33 +79,43 @@ loaders may need a device-specific procedure and another filename,
 such as update.bin. These .bin files are application images, not
 complete bootloader/partition packages.
 
+5. STABLE UPDATE THROUGH OTA
+
+OTA is only for a compatible stable update offered by the updater on
+the device. Open its update screen, check the proposed version and
+channel, and follow the on-device prompts. An RC is installed manually;
+do not expect the RC itself to appear in OTA.
+
 CrossPoint user guide:
 https://github.com/crosspoint-reader/crosspoint-reader/blob/develop/USER_GUIDE.md
 CrossInk installation guide:
 https://crossink.dev/installation.html
 
 
-HƯỚNG DẪN CÀI ĐẶT THỦ CÔNG CROSSPINK 1.6.5-cp.8.10 RC
-======================================================
+HƯỚNG DẪN CÀI ĐẶT FIRMWARE CROSSPINK
+====================================
 
 TIẾNG VIỆT
 ----------
 
-1. TRẠNG THÁI BẢN PHÁT HÀNH
+1. CHỌN BẢN PHÁT HÀNH
 
-Đây là bản ứng viên (RC) để thử nghiệm, chưa phải bản ổn định phát
-hành chính thức. Hãy tải tệp .bin đúng mẫu máy và kênh firmware từ
-thư mục Google Drive do người duy trì chia sẻ. Bản RC không được cung
-cấp qua OTA hoặc GitHub Releases.
+CrossPink được phân phối dưới dạng bản ổn định và bản ứng viên (RC).
+Bản ổn định có thể được cung cấp qua trình cập nhật OTA trên máy sau
+khi được công bố cho đúng kênh firmware đang cài. RC dùng để thử
+nghiệm và được cài thủ công từ tệp .bin do người duy trì chia sẻ qua
+Google Drive; RC không được cung cấp qua OTA.
 
-Tại thời điểm đóng gói RC (24/09/2026), các nguồn OTA ổn định vẫn trỏ
-tới 8.9. Khi bản stable 8.10 được công bố trong nguồn OTA đúng kênh,
-máy đang chạy Full 8.10 RC sẽ nhận Full 8.10 stable là bản cập nhật.
-Light 8.10 RC cũng sẽ nhận Light 8.10 stable. Hai kênh không cập nhật
-chéo. Trước khi stable 8.10 và nguồn OTA tương ứng được công bố,
-máy sẽ chưa được đề xuất bản 8.10 stable.
+Hãy tải tệp từ nguồn được công bố cho bản bạn định cài. Giữ firmware,
+tệp checksum tùy chọn và hướng dẫn phát hành trong cùng 1 bộ build.
+Không trộn tệp của các bản stable hoặc RC khác nhau.
 
-2. CHỌN ĐÚNG TỆP
+Nếu máy đang chạy RC, bản ổn định cùng kênh được công bố sau đó có
+thể xuất hiện trên OTA. Hãy kiểm tra màn cập nhật; khả năng nâng cấp
+phụ thuộc vào bản phát hành và firmware đang cài. Full và Light
+không cập nhật chéo kênh qua OTA.
+
+2. CHỌN ĐÚNG FIRMWARE
 
 Kênh   Thiết bị            Tệp firmware                 Tệp checksum tùy chọn
 -----  ------------------  ---------------------------  ----------------------------------
@@ -111,26 +124,28 @@ Full   Xteink X4 Pro       firmware-x4pro.bin           firmware-x4pro.bin.sha25
 Light  Xteink X3 / X4      firmware-light.bin           firmware-light.bin.sha256
 Light  Xteink X4 Pro       firmware-light-x4pro.bin     firmware-light-x4pro.bin.sha256
 
-4 tệp firmware này không dành cho X4 Classic. Full và Light là 2 kênh
-riêng. Không chọn tệp chỉ theo tên; hãy xác nhận mẫu máy và kênh.
-Giữ 4 tệp firmware, các tệp checksum tùy chọn và hướng dẫn này cùng
-1 bộ RC; không trộn với tệp từ bản build cũ.
+Các tên tệp trên dành cho những mẫu máy được liệt kê trong gói
+CrossPink. Thiết bị khác, kể cả X4 Classic, cần image tương thích
+riêng nếu được cung cấp. Luôn đối chiếu cả mẫu máy lẫn kênh Full/Light
+trong hướng dẫn đi kèm bản phát hành. Chỉ tên tệp giống nhau không đủ
+để xác nhận tương thích phần cứng.
 
 3. KIỂM TRA CHECKSUM - TÙY CHỌN
 
 Kiểm tra SHA-256 được khuyến nghị nhưng không bắt buộc để cài đặt.
-Nếu muốn kiểm tra, hãy tải tệp .sha256 cùng tên với tệp .bin đã chọn.
-Tệp checksum chứa mã kiểm tra dự kiến dài 64 ký tự.
+Nếu có tệp .sha256 tương ứng, bạn có thể tải về và kiểm tra tệp .bin
+trước khi chép vào thẻ SD. Tệp .sha256 chứa mã kiểm tra dự kiến dài
+64 ký tự.
 
 Trên macOS:      shasum -a 256 FILE.bin
 Trên Linux:      sha256sum FILE.bin
 Trên PowerShell: Get-FileHash FILE.bin -Algorithm SHA256
 
-Đối chiếu mã do lệnh in ra với nội dung tệp .sha256 tương ứng. Nếu
-khác nhau, hãy tải lại cả 2 tệp và không cài tệp .bin đó. Tệp .sha256
-chỉ dùng để kiểm tra trên máy tính; chỉ chép tệp .bin vào thẻ SD.
+Đối chiếu mã do lệnh in ra với tệp .sha256 tương ứng. Nếu khác nhau,
+hãy tải lại các tệp và không cài tệp .bin bị sai. Tệp checksum giữ
+trên máy tính; chỉ chép tệp .bin vào thẻ SD.
 
-4. CÀI TỪ THẺ SD
+4. CÀI THỦ CÔNG TỪ THẺ SD
 
 Trước khi cài, xác nhận chính xác mẫu máy và kênh muốn dùng, sao lưu
 dữ liệu đọc quan trọng, giữ nguyên thư mục /.crosspoint và sạc đủ
@@ -140,23 +155,28 @@ pin. Không format thẻ SD.
 2) Nếu firmware đang cài có trình chọn tệp cập nhật từ SD, mở mục
    cập nhật của firmware đó và chọn tệp. CrossPink chấp nhận tên phát
    hành gốc. Hướng dẫn CrossInk có trình chọn tệp .bin từ SD, nhưng
-   việc trình cập nhật đó chấp nhận các tệp và tên tệp CrossPink chưa
-   được xác nhận ở đây. Nếu bị từ chối, hãy dừng lại.
+   việc trình cập nhật đó chấp nhận tệp và tên tệp CrossPink chưa được
+   xác nhận ở đây. Nếu bị từ chối, hãy dừng lại.
 3) Một số phiên bản CrossPoint hướng dẫn cập nhật SD bằng tên cố định
    firmware.bin. Làm theo hướng dẫn đúng phiên bản đang cài. Chỉ đổi
    tên tệp đã chọn nếu trình cập nhật đó yêu cầu. Việc cài CrossPink
    qua trình cập nhật CrossPoint chưa được xác nhận ở đây; nếu bị từ
    chối, hãy dừng lại.
 4) Không rút thẻ SD hoặc ngắt nguồn khi đang ghi. Sau khi máy khởi
-   động lại, kiểm tra dữ liệu đọc và phiên bản hiển thị:
-   Full:  1.6.5-cp.8.10-rc+778e08c
-   Light: 1.6.5-cp.8.10-light-rc+3b3a981
+   động lại, kiểm tra phiên bản, kênh firmware và dữ liệu đọc.
 
 Nếu firmware hiện tại không có cách cập nhật SD tương thích, đừng
 tự đoán lệnh hoặc địa chỉ nạp USB. Recovery của firmware gốc và các
 bộ nạp khác có thể cần quy trình riêng cho thiết bị và tên tệp khác,
 chẳng hạn update.bin. Các tệp .bin này là image ứng dụng, không phải
 gói đầy đủ bootloader/bảng phân vùng.
+
+5. CẬP NHẬT BẢN ỔN ĐỊNH QUA OTA
+
+OTA chỉ dành cho bản ổn định tương thích được trình cập nhật trên
+máy đề xuất. Mở màn cập nhật, kiểm tra phiên bản và kênh được đề xuất
+rồi làm theo hướng dẫn trên máy. RC được cài thủ công; không chờ bản
+RC xuất hiện trên OTA.
 
 Hướng dẫn CrossPoint:
 https://github.com/crosspoint-reader/crosspoint-reader/blob/develop/USER_GUIDE.md
@@ -169,6 +189,8 @@ VERSION HISTORY / LỊCH SỬ PHIÊN BẢN
 
 v1.0 | 24/09/2026 | Initial bilingual installation guide
      | Documentation editor
-v1.1 | 24/09/2026 | RC 8.10, optional checksums, Drive installation,
-     |                and stable OTA upgrade behavior
+v1.1 | 24/09/2026 | Added RC channel, optional checksums,
+     |                and stable OTA guidance
+     | Documentation editor
+v1.2 | 24/09/2026 | Generalized for stable and RC releases
      | Documentation editor

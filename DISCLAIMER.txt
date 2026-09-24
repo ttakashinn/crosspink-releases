@@ -9,10 +9,10 @@ for the author's personal use. It is provided free of charge, "AS IS" and "AS
 AVAILABLE," without any warranty or promise of support, maintenance, updates,
 compatibility, security, reliability, or fitness for a particular purpose.
 
-CrossPink 1.6.5-cp.8.10 RC is a release candidate for testing, not an official
-stable release. Its 4 firmware .bin files are distributed through Google Drive
-for manual installation only. This RC is not offered through OTA. Availability
-of an RC file does not mean it has been tested on every supported device.
+CrossPink may be distributed as a stable release or a release candidate (RC).
+An RC is intended for testing and may have unresolved defects. Check the
+release label and the instructions accompanying the file before installing.
+Neither a stable nor an RC label guarantees compatibility or error-free use.
 
 Installing or using custom firmware is voluntary and at your own risk. The
 process may fail, prevent the device from starting, erase or corrupt data,
@@ -42,11 +42,10 @@ theo hiện trạng ("NGUYÊN TRẠNG") và khi có sẵn, không kèm bảo đ�
 về hỗ trợ, bảo trì, cập nhật, khả năng tương thích, bảo mật, độ tin cậy hay
 tính phù hợp cho một mục đích cụ thể.
 
-CrossPink 1.6.5-cp.8.10 RC là bản ứng viên để thử nghiệm, chưa phải bản ổn
-định phát hành chính thức. 4 tệp firmware .bin của bản RC chỉ được phân phối
-qua Google Drive để cài thủ công. Bản RC này không được cung cấp qua OTA. Việc
-có tệp RC không có nghĩa là firmware đã được kiểm thử trên mọi thiết bị được
-hỗ trợ.
+CrossPink có thể được phân phối dưới dạng bản ổn định hoặc bản ứng viên (RC).
+RC dành cho việc thử nghiệm và có thể còn lỗi chưa được xử lý. Hãy kiểm tra
+nhãn phát hành và hướng dẫn đi kèm tệp trước khi cài đặt. Cả nhãn ổn định
+lẫn RC đều không bảo đảm firmware tương thích hoặc hoạt động không có lỗi.
 
 Việc cài đặt hoặc sử dụng firmware tùy chỉnh là tự nguyện và do bạn tự chịu
 rủi ro. Quá trình này có thể thất bại, khiến thiết bị không khởi động được,
@@ -62,3 +61,12 @@ mất dữ liệu, mất khả năng sử dụng hoặc thiệt hại phát sinh
 
 Tác giả không cung cấp bảo hành hoặc hỗ trợ kỹ thuật. Nếu bạn không chấp nhận
 các rủi ro này, đừng cài đặt hoặc sử dụng firmware.
+
+
+VERSION HISTORY / LỊCH SỬ PHIÊN BẢN
+-----------------------------------
+
+v1.0 | 24/09/2026 | Standalone bilingual disclaimer
+     | Documentation editor
+v1.1 | 24/09/2026 | Generalized for stable and RC releases
+     | Documentation editor
