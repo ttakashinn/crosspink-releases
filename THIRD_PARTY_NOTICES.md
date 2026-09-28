@@ -13,6 +13,7 @@ This repository distributes firmware and documentation separately from developme
 | Arduino ESP32 3.3.7 | Framework `package.json`, core source headers | LGPL-2.1-or-later; notices, source and applicable relinking obligations remain. |
 | ESP-IDF and included components | Framework `LICENSE` and component notices | Apache-2.0, BSD, MIT and component-specific terms, including Espressif binary library redistribution terms. |
 | ArduinoJson 7.4.2, QRCode 0.0.1, SdFat | Resolved package license files | MIT; retain notices. |
+| WitchHunt Reader 2.35 progressive JPEG decoder | Adapted `lib/ProgressiveJpeg/` and included `licenses/WitchHunt-ProgressiveJpeg.txt` | MIT; copyright (c) 2025 Dave Allie. |
 | PNGdec 1.1.6 and JPEGDEC pinned revision | Resolved package `LICENSE` | Apache-2.0; retain copyright/license and describe modifications where applicable. CrossPink applies build compatibility patches in the corresponding source. |
 | Expat, miniz and uzlib | Vendored notices in `lib/` | MIT / permissive notices as reproduced in `licenses/`. |
 | Lucide / Feather icons | SDK icon license and dashboard icon license | ISC / MIT; retain authorship and license notices. |

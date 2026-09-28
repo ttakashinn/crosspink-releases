@@ -13,6 +13,7 @@ Collected 2026-09-10 from the current checked-out source and resolved build depe
 | [ArduinoJson.txt](ArduinoJson.txt) | `Resolved dependency ArduinoJson/LICENSE.txt (versions pinned in platformio.ini)` |
 | [QRCode.txt](QRCode.txt) | `Resolved dependency QRCode/LICENSE.txt (versions pinned in platformio.ini)` |
 | [PNGdec.txt](PNGdec.txt) | `Resolved dependency PNGdec/LICENSE (versions pinned in platformio.ini)` |
+| [WitchHunt-ProgressiveJpeg.txt](WitchHunt-ProgressiveJpeg.txt) | `lib/ProgressiveJpeg/` adapted from WitchHunt Reader 2.35 |
 | [JPEGDEC.txt](JPEGDEC.txt) | `Resolved dependency JPEGDEC/LICENSE (versions pinned in platformio.ini)` |
 | [SdFat.txt](SdFat.txt) | `Resolved dependency SdFat/LICENSE.md (versions pinned in platformio.ini)` |
 | [fonts/NotoSansHebrew-OFL.txt](fonts/NotoSansHebrew-OFL.txt) | `lib/EpdFont/builtinFonts/source/NotoSansHebrew/OFL.txt` |
