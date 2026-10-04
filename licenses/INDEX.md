@@ -16,6 +16,10 @@ Collected 2026-09-10 from the current checked-out source and resolved build depe
 | [WitchHunt-ProgressiveJpeg.txt](WitchHunt-ProgressiveJpeg.txt) | `lib/ProgressiveJpeg/` adapted from WitchHunt Reader 2.35 |
 | [JPEGDEC.txt](JPEGDEC.txt) | `Resolved dependency JPEGDEC/LICENSE (versions pinned in platformio.ini)` |
 | [SdFat.txt](SdFat.txt) | `Resolved dependency SdFat/LICENSE.md (versions pinned in platformio.ini)` |
+| [FreeInkFont-MIT.txt](FreeInkFont-MIT.txt) | `lib/FreeInkFont/LICENSE-MIT.txt` |
+| [FreeType-FTL.txt](FreeType-FTL.txt) | `lib/FreeInkFont/third_party/freetype/FTL.TXT` |
+| [FreeType-LICENSE.txt](FreeType-LICENSE.txt) | `lib/FreeInkFont/third_party/freetype/LICENSE.TXT` |
+| [stb_truetype-MIT.txt](stb_truetype-MIT.txt) | MIT option in `lib/FreeInkFont/third_party/stb/stb_truetype.h` |
 | [fonts/NotoSansHebrew-OFL.txt](fonts/NotoSansHebrew-OFL.txt) | `lib/EpdFont/builtinFonts/source/NotoSansHebrew/OFL.txt` |
 | [fonts/Inter-OFL.txt](fonts/Inter-OFL.txt) | `lib/EpdFont/builtinFonts/source/Inter/OFL.txt` |
 | [fonts/EBGaramond-OFL.txt](fonts/EBGaramond-OFL.txt) | `lib/EpdFont/builtinFonts/source/EBGaramond/OFL.txt` |

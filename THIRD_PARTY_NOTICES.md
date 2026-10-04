@@ -17,6 +17,9 @@ This repository distributes firmware and documentation separately from developme
 | PNGdec 1.1.6 and JPEGDEC pinned revision | Resolved package `LICENSE` | Apache-2.0; retain copyright/license and describe modifications where applicable. CrossPink applies build compatibility patches in the corresponding source. |
 | Expat, miniz and uzlib | Vendored notices in `lib/` | MIT / permissive notices as reproduced in `licenses/`. |
 | Lucide / Feather icons | SDK icon license and dashboard icon license | ISC / MIT; retain authorship and license notices. |
+| FreeInkFont, X4 Pro TTF edition | `lib/FreeInkFont/LICENSE-MIT.txt` | MIT; license text is included as `licenses/FreeInkFont-MIT.txt`. |
+| FreeType, X4 Pro TTF edition | Vendored `lib/FreeInkFont/third_party/freetype/FTL.TXT` and `LICENSE.TXT` | FreeType License (FTL); attribution and the checked-out license texts are included. CrossPink applies font-source and allocation-failure handling modifications. |
+| stb_truetype, font-engine dependency | Vendored `lib/FreeInkFont/third_party/stb/stb_truetype.h` | MIT option; retain the notice reproduced in `licenses/stb_truetype-MIT.txt`. |
 | Embedded fonts | Each family’s `OFL.txt` or `UFL.txt` | SIL Open Font License or Ubuntu Font Licence. The text for each supplied family is included separately. Older downloadable font packs also contain their own notices. |
 | JSZip and bundled pako | Header in the served `jszip.min.js` | JSZip MIT or GPLv3; MIT option and pako MIT/zlib notices are reproduced. |
 
@@ -29,3 +32,7 @@ The application and SDK repositories are currently private. This release reposit
 Free-of-charge sharing, including to a small community group, is still distribution. Providing license text alone does not replace GPL corresponding source or LGPL relinking requirements. Any future private-source distribution needs a resolved license/source distribution arrangement before public firmware publication. No restriction on the rights granted by the component licenses is added here.
 
 See the [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.en.html), [GPLv2 FAQ](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.en.html) and [wolfSSL licensing](https://www.wolfssl.com/license/). The currently published wolfSSL licensing page describes current releases; the package version and source headers above are the evidence for this project’s pinned 5.7.2 dependency.
+
+## X4 Pro TTF font engine attribution
+
+Portions of this software are copyright © The FreeType Project (www.freetype.org). All rights reserved.

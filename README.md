@@ -34,12 +34,15 @@ Mở [bản ổn định mới nhất](https://github.com/ttakashinn/crosspink-r
 
 | Kênh | Thiết bị | File cần tải |
 | --- | --- | --- |
-| Full | Xteink X3 / X4 | `firmware.bin` |
+| Full | Xteink X3 / X4 | `firmware-x3-x4.bin` |
 | Full | Xteink X4 Pro | `firmware-x4pro.bin` |
-| Light | Xteink X3 / X4 | `firmware-light.bin` |
+| Light | Xteink X3 / X4 | `firmware-light-x3-x4.bin` |
 | Light | Xteink X4 Pro | `firmware-light-x4pro.bin` |
+| Full TTF | Xteink X4 Pro | `firmware-TTF-FONTS-x4pro.bin` |
 
-Chỉ dùng asset được công bố cho thiết bị của bạn. Sticky, X4 Classic và Paper Mono có profile build trong dự án nguồn nhưng hiện không nằm trong 2 biến thể của workflow phát hành. Không nạp binary C3 cho X4 Pro hoặc ngược lại.
+Chỉ dùng asset được công bố cho thiết bị của bạn. Sticky, X4 Classic và Paper Mono có profile build trong dự án nguồn nhưng hiện không nằm trong các thiết bị được phát hành chính thức. Không nạp binary C3 cho X4 Pro hoặc ngược lại.
+
+Từ bản ổn định 9.1, X3/X4 dùng tên file mới như bảng trên; các bản cũ giữ tên asset đã phát hành. Bản TTF chỉ dành cho X4 Pro, giữ chức năng Full và hỗ trợ font TTF/OTF/TTC; Font vector mặc định Tắt. Để chuyển sang TTF, kể cả từ RC TTF cũ, cài đúng file TTF qua thẻ SD.
 
 Kiểm tra SHA-256 là bước tùy chọn. Nếu muốn kiểm tra, tải file `.sha256` đi kèm; trên macOS chạy `shasum -a 256 FILE.bin`, trên Linux chạy `sha256sum FILE.bin`, hoặc trên PowerShell chạy `Get-FileHash FILE.bin -Algorithm SHA256`. Thay `FILE.bin` bằng tên file đã tải và đối chiếu đủ 64 ký tự với file checksum tương ứng.
 
@@ -50,14 +53,14 @@ Kiểm tra SHA-256 là bước tùy chọn. Nếu muốn kiểm tra, tải file 
 3. Nếu firmware hiện tại có mục này, mở **Cài đặt → Hệ thống → Cập nhật firmware từ thẻ SD**, chọn file và làm theo hướng dẫn trên máy.
 4. Chờ cập nhật hoàn tất; không ngắt nguồn trong lúc ghi firmware. Kiểm tra lại phiên bản sau khi khởi động.
 
-Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ liệu đọc. Không format thẻ SD khi cập nhật. Xem [hướng dẫn cài đặt](INSTALLATION_GUIDE.txt) để chọn đúng file và cách cài phù hợp với firmware hiện tại.
+Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ liệu đọc. Không format thẻ SD khi cập nhật. Xem [hướng dẫn cài đặt v1.3 cho 9.1](INSTALLATION_GUIDE_v1.3.txt) để chọn đúng file và cách cài phù hợp với firmware hiện tại.
 
 ## Cài qua USB
 
 Các file trên là **application image**, không phải image ghép đầy đủ bootloader/partition. Với X3/X4 đã có bootloader và bảng phân vùng CrossPink tương thích, có thể dùng esptool để ghi application vào `0x10000`:
 
 ```sh
-esptool --chip esp32c3 --port YOUR_SERIAL_PORT --baud 921600 write-flash 0x10000 firmware.bin
+esptool --chip esp32c3 --port YOUR_SERIAL_PORT --baud 921600 write-flash 0x10000 firmware-x3-x4.bin
 ```
 
 Thay `YOUR_SERIAL_PORT` bằng cổng máy. Không dùng lệnh này như hướng dẫn cài lần đầu lên thiết bị/bảng phân vùng chưa xác định. Với máy khóa USB, chỉ dùng công cụ mở khóa khi nhà cung cấp xác nhận rõ firmware được hỗ trợ. Hướng dẫn SD/OTA chỉ áp dụng khi firmware hiện tại cung cấp chức năng đó.
