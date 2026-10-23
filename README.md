@@ -36,13 +36,20 @@ Mở [bản ổn định mới nhất](https://github.com/ttakashinn/crosspink-r
 | --- | --- | --- |
 | Full | Xteink X3 / X4 | `firmware-x3-x4.bin` |
 | Full | Xteink X4 Pro | `firmware-x4pro.bin` |
+| Full | Xteink X4 Classic | `firmware-x4c.bin` |
 | Light | Xteink X3 / X4 | `firmware-light-x3-x4.bin` |
 | Light | Xteink X4 Pro | `firmware-light-x4pro.bin` |
-| Full TTF | Xteink X4 Pro | `firmware-TTF-FONTS-x4pro.bin` |
+| Light | Xteink X4 Classic | `firmware-light-x4c.bin` |
 
-Chỉ dùng asset được công bố cho thiết bị của bạn. Sticky, X4 Classic và Paper Mono có profile build trong dự án nguồn nhưng hiện không nằm trong các thiết bị được phát hành chính thức. Không nạp binary C3 cho X4 Pro hoặc ngược lại.
+Bảng trên mô tả quy trình phát hành mới, chuẩn bị cho 9.12 khi phiên bản đó được công bố. Các bản 9.6 và 9.11 đang giữ trong kho chưa có binary X4 Classic. Chỉ tải file thực sự có trong asset của đúng bản phát hành; không đổi tên binary X4 Pro hoặc C3 thành Classic. Pro và Classic cùng dùng ESP32-S3 nhưng khác cấu hình phần cứng.
 
-Từ bản ổn định 9.1, X3/X4 dùng tên file mới như bảng trên; các bản cũ giữ tên asset đã phát hành. Bản TTF chỉ dành cho X4 Pro, giữ chức năng Full và hỗ trợ font TTF/OTF/TTC; Font vector mặc định Tắt. Để chuyển sang TTF, kể cả từ RC TTF cũ, cài đúng file TTF qua thẻ SD.
+Full và Light trên X4 Pro, cùng X4 Classic trong quy trình mới, có bộ nạp font TTF/OTF trên thẻ SD; không còn edition hoặc binary TTF riêng. X3/X4 dùng font bitmap. Classic điều khiển bằng phím cứng, không có cảm ứng hoặc đèn nền. Hỗ trợ Classic chưa được xác nhận trên thiết bị thật trong đợt triển khai này. Sticky và Paper Mono không nằm trong ma trận phát hành.
+
+Gói mới của Full dùng `release-notes.txt` và `sha256sums.txt`; Light dùng `release-notes-light.txt` và `sha256sums-light.txt`. Mỗi bảng checksum tổng chỉ liệt kê 3 binary của đúng edition. Mỗi binary vẫn có file `.sha256` riêng để OTA xác minh; `SHA256SUMS` cũng chỉ liệt kê binary. Các release cũ có thể giữ tên và cấu trúc ghi chú/checksum ban đầu.
+
+X3/X4 và X4 Pro chạy 9.11 Full/Light có thể kiểm tra OTA lên 9.12 cùng edition khi release và manifest OTA tương ứng đã được công bố. Việc thêm asset Classic hoặc đổi tên ghi chú/checksum tổng không đổi tên binary và checksum riêng của các board cũ. Classic cần firmware có bộ chọn OTA riêng; binary thử nghiệm cũ chặn OTA phải được thay qua thẻ SD trước. OTA không chuyển chéo Full/Light và không cung cấp RC.
+
+Kho giữ 4 release/tag: 9.6 Full, 9.6 Light, 9.11 Full và 9.11 Light. Các phiên bản khác đã được dọn khỏi kho public.
 
 Kiểm tra SHA-256 là bước tùy chọn. Nếu muốn kiểm tra, tải file `.sha256` đi kèm; trên macOS chạy `shasum -a 256 FILE.bin`, trên Linux chạy `sha256sum FILE.bin`, hoặc trên PowerShell chạy `Get-FileHash FILE.bin -Algorithm SHA256`. Thay `FILE.bin` bằng tên file đã tải và đối chiếu đủ 64 ký tự với file checksum tương ứng.
 
@@ -53,7 +60,7 @@ Kiểm tra SHA-256 là bước tùy chọn. Nếu muốn kiểm tra, tải file 
 3. Nếu firmware hiện tại có mục này, mở **Cài đặt → Hệ thống → Cập nhật firmware từ thẻ SD**, chọn file và làm theo hướng dẫn trên máy.
 4. Chờ cập nhật hoàn tất; không ngắt nguồn trong lúc ghi firmware. Kiểm tra lại phiên bản sau khi khởi động.
 
-Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ liệu đọc. Không format thẻ SD khi cập nhật. Xem [hướng dẫn cài đặt v1.3 cho 9.1](INSTALLATION_GUIDE_v1.3.txt) để chọn đúng file và cách cài phù hợp với firmware hiện tại.
+Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ liệu đọc. Không format thẻ SD khi cập nhật. Xem [hướng dẫn cài đặt v1.4](INSTALLATION_GUIDE_v1.4.txt) để chọn đúng file và cách cài phù hợp với firmware hiện tại.
 
 ## Cài qua USB
 
