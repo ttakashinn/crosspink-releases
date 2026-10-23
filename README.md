@@ -60,7 +60,7 @@ Kiểm tra SHA-256 là bước tùy chọn. Nếu muốn kiểm tra, tải file 
 3. Nếu firmware hiện tại có mục này, mở **Cài đặt → Hệ thống → Cập nhật firmware từ thẻ SD**, chọn file và làm theo hướng dẫn trên máy.
 4. Chờ cập nhật hoàn tất; không ngắt nguồn trong lúc ghi firmware. Kiểm tra lại phiên bản sau khi khởi động.
 
-Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ liệu đọc. Không format thẻ SD khi cập nhật. Xem [hướng dẫn cài đặt v1.4](INSTALLATION_GUIDE_v1.4.txt) để chọn đúng file và cách cài phù hợp với firmware hiện tại.
+Giữ nguyên thư mục `/.crosspoint` để bảo toàn cấu hình và dữ liệu đọc. Không format thẻ SD khi cập nhật. Xem [hướng dẫn cài đặt v1.5](INSTALLATION_GUIDE_v1.5.txt) để chọn đúng file và cách cài phù hợp với firmware hiện tại.
 
 ## Cài qua USB
 
